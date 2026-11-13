@@ -1,0 +1,6 @@
+@Vex.API_HostAddress = http://localhost:5094
+
+POST {{Vex.API_HostAddress}}/Sms/Send?creditNumber=1&templateID=1
+}
+
+###

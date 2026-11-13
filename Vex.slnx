@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="readme.md" />
+  </Folder>
+  <Folder Name="/Solution Items/Images/">
+    <File Path="Sms.png" />
+  </Folder>
+  <Project Path="Vex.API/Vex.API.csproj" Id="f641e7f9-2c25-42f6-a70d-ce2db3b1352b" />
+  <Project Path="Vex.Database/Vex.Database.csproj" Id="fb841972-02cd-47fa-aff1-5f74256dbace" />
+  <Project Path="Vex.Models/Vex.Models.csproj" Id="d20f6956-1da3-4cc6-b511-18878cbf44a6" />
+  <Project Path="Vex.Orchestrator/Vex.Orchestrator.csproj" Id="43675c21-5c0b-42ab-9388-ef9caf1165f0" />
+  <Project Path="Vex.Sms/Vex.Sms.csproj" Id="089eb1ee-ec92-41ab-ae3c-e8c4b76d785e" />
+</Solution>

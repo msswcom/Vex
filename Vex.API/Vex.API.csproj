@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net11.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="11.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="11.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Vex.Database\Vex.Database.csproj" />
+    <ProjectReference Include="..\Vex.Orchestrator\Vex.Orchestrator.csproj" />
+    <ProjectReference Include="..\Vex.Sms\Vex.Sms.csproj" />
+  </ItemGroup>
+
+</Project>
