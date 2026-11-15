@@ -4,9 +4,9 @@ namespace Vex.Sms.Services;
 
 public class SmsSender(IProvider provider) : ISmsSender
 {
-    public string Send(string text, long[] recipients)
+    public string Send(string text, string recipient)
     {
-        var message = provider.Send(text, recipients);
+        var message = provider.Send(text, recipient);
 
         return message;
     }

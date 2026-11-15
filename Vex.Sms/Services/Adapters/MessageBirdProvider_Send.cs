@@ -5,20 +5,13 @@ namespace Vex.Sms.Services.Adapters;
 
 internal partial class MessageBirdProvider : IProvider
 {
-    public string Send(string text, long[] recipients)
+    public string Send(string text, string recipient)
     {
         string? response;
 
-        try
-        {
-            var message = client.SendMessage(MessageBirdAPI.Telephone!, text, recipients);
+        var message = client.SendMessage(MessageBirdAPI.Telephone!, text, [Convert.ToInt64(recipient)]);
 
-            response = JsonSerializer.Serialize(message);
-        }
-        catch
-        {
-            response = "Error sending to MessageBird. New Bird.com API is available which is not free.";
-        }
+        response = JsonSerializer.Serialize(message);
 
         return response;
     }

@@ -18,7 +18,7 @@ internal class CreditNotificationSender(
 
         var text = TemplateConverter.Convert(credit, template);
 
-        var response = smsSender.Send(text, [Convert.ToInt64(credit.CustomerPhone)]);
+        var response = smsSender.Send(text, credit.CustomerPhone);
 
         await messages.InsertAsync(new Message
         {

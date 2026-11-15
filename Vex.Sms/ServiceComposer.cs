@@ -9,7 +9,8 @@ public static class ServiceComposer
 {
     public static IServiceCollection AddSms(this IServiceCollection services)
     {
-        services.AddTransient<IProvider, MessageBirdProvider>();
+        services.AddHttpClient<BirdProvider>();
+        services.AddTransient<IProvider, BirdProvider>();
         services.AddTransient<ISmsSender, SmsSender>();
 
         return services;

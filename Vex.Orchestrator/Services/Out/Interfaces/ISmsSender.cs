@@ -2,5 +2,5 @@
 
 public interface ISmsSender
 {
-    string Send(string text, long[] recipients);
+    string Send(string text, string recipient);
 }

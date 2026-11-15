@@ -2,5 +2,5 @@
 
 public interface IProvider
 {
-    string Send(string text, long[] recipients);
+    string Send(string text, string recipient);
 }
